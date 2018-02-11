@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+
+<div class = "box">
+	<img src= "{{ url_for('static', 
+filename="dp.jpg") }}">
+
+	<h1> Matthew Soares </h1>
+	<p class = "info"> @msoares</p>
+	<p class = "info"> Kingston,Jamaica </p>
+	<p class = "info"> {{ date }}</p>
+
+	<div class = "other_half">	
+
+		<div class="row">
+			<div class="col-md-12"> 
+				<div class = "about">
+					<p> An aspiring web designer hoping to make great strides within the industry. If you're interested in my work, follow my page to stay updated.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="row">
+			<div class="col-md-4"> 
+				<span class = "num"> 7</span>
+			</div>
+			<div class="col-md-4 mobile-padding-left"> 
+				<span class = "num"> 1</span>
+			</div>
+			<div class="col-md-4"> 
+				<span class = "num"> 734</span>
+			</div>
+			
+		</div>
+		
+		<div class="row"> 
+			<div class="col-md-4"> 
+				<span class = "follow_info"> 
+					Posts
+				</span>
+			</div>
+			<div class="col-md-4 mobile-padding-left"> 
+				<span class = "follow_info"> 
+					Following
+				</span>
+			</div>
+			<div class="col-md-4"> 
+				<span class = "follow_info"> 
+					Followers
+				</span>
+			</div>
+		</div>
+			
+		<div class="row">
+			<div class="col-md-12">
+				<button class="btn btn-success btn-lg">
+					Follow
+				</button>	
+			</div>
+		</div>
+		
+	</div>	
+</div>
+
+
+
+
+{% endblock %}
